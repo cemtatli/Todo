@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html,
+  body {
+    font-family: "Satoshi", sans-serif;
+    @apply antialiased;
+  }
+  .buton-design {
+    @apply bg-gradient-to-bl -from--blue -to--darkblue text-sm font-semibold text-white transition-colors hover:-from--pink hover:-to--red;
+  }
+  .radius-start {
+    border-radius: 16px 0px 0px 16px;
+  }
+  .radius-end {
+    border-radius: 0px 8px 8px 0px;
+  }
+  .succes {
+    @apply bg-green-200 text-green-900;
+  }
+  .warning {
+    @apply bg-yellow-200 text-yellow-900;
+  }
+  .chat-bubble {
+    border-radius: 0px 16px 16px 16px;
+  }
+  .todoText.line-through {
+    text-decoration: line-through;
+    color: #0a97fe;
+  }
+  ::-webkit-scrollbar {
+    width: 4px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #141414;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #78acd5;
+    transition: 300ms all;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #0a97fe;
+  }
+}

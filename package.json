@@ -1,0 +1,13 @@
+{
+  "devDependencies": {
+    "prettier": "^2.8.3",
+    "prettier-plugin-tailwindcss": "^0.2.2",
+    "tailwindcss": "^3.2.4"
+  },
+  "scripts": {
+    "watch": "npx tailwindcss -i ./public/input.css -o ./public/output.css --watch"
+  },
+  "dependencies": {
+    "@tabler/icons": "^2.2.0"
+  }
+}
