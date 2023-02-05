@@ -117,7 +117,7 @@ function AddUI(newTodo) {
     "sm:text-sm",
     "font-semibold",
     "text-white",
-    "w-17.5",
+    "w-20",
     "text-xs",
     "radius-start"
   );
