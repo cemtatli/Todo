@@ -627,8 +627,8 @@ html,
   margin-bottom: 0.5rem;
 }
 
-.mb-5 {
-  margin-bottom: 1.25rem;
+.mb-4 {
+  margin-bottom: 1rem;
 }
 
 .ml-1 {
@@ -647,8 +647,8 @@ html,
   margin-bottom: 0.5rem;
 }
 
-.mb-10 {
-  margin-bottom: 2.5rem;
+.mb-8 {
+  margin-bottom: 2rem;
 }
 
 .mr-1 {
@@ -663,16 +663,12 @@ html,
   margin-left: 0.75rem;
 }
 
-.mb-1 {
-  margin-bottom: 0.25rem;
+.mt-4 {
+  margin-top: 1rem;
 }
 
-.mb-8 {
-  margin-bottom: 2rem;
-}
-
-.mb-4 {
-  margin-bottom: 1rem;
+.mt-5 {
+  margin-top: 1.25rem;
 }
 
 .flex {
@@ -881,6 +877,11 @@ html,
   padding-right: 1.5rem;
 }
 
+.px-5 {
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+
 .pl-10 {
   padding-left: 2.5rem;
 }
@@ -976,6 +977,16 @@ html,
   line-height: 1.25rem;
 }
 
+.placeholder\:text-xs::-moz-placeholder {
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
+
+.placeholder\:text-xs::placeholder {
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
+
 .focus\:-border--red:focus {
   --tw-border-opacity: 1;
   border-color: rgb(255 36 96 / var(--tw-border-opacity));
@@ -1008,12 +1019,40 @@ html,
 }
 
 @media (min-width: 1024px) {
+  .lg\:mt-0 {
+    margin-top: 0px;
+  }
+
   .lg\:flex {
     display: flex;
   }
 
+  .lg\:w-25 {
+    width: 6.25rem;
+  }
+
   .lg\:p-8 {
     padding: 2rem;
+  }
+
+  .lg\:text-base {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
+  .lg\:text-sm {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+
+  .lg\:placeholder\:text-sm::-moz-placeholder {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+
+  .lg\:placeholder\:text-sm::placeholder {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
   }
 }
 
