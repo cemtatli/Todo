@@ -35,7 +35,6 @@ function filterTodos(event) {
       todoBox.style.display = "flex";
     }
   });
-  alert("warning", "Must have at least one todo to filter !", 500);
 }
 
 function deleteAllTodos() {
@@ -110,14 +109,14 @@ function AddUI(newTodo) {
   const todoCompleteButton = document.createElement("button");
   todoCompleteButton.classList.add(
     "h-full",
-    "sm:w-25",
+    "md:w-25",
     "bg-gradient-to-bl",
     "-from--blue",
     "-to--darkblue",
-    "sm:text-sm",
+    "md:text-sm",
     "font-semibold",
     "text-white",
-    "w-20",
+    "w-17.5",
     "text-xs",
     "radius-start"
   );
@@ -125,7 +124,7 @@ function AddUI(newTodo) {
   const todoText = document.createElement("p");
   todoText.setAttribute("id", "todoText");
   todoText.classList.add(
-    "sm:ml-6",
+    "md:ml-6",
     "ml-3",
     "flex-1",
     "overflow-hidden",
@@ -149,10 +148,11 @@ function AddUI(newTodo) {
   todoText.innerText = newTodo;
 
   const todoDeleteButton = document.createElement("button");
-  todoDeleteButton.classList.add("group", "h-full", "p-4");
+  todoDeleteButton.classList.add("group", "flex", "items-center", "radius-end");
+  todoDeleteButton.setAttribute("id", "todoDeleteButton");
 
   const todoDeleteIcon = document.createElement("i");
-  todoDeleteIcon.classList.add("ti", "ti-trash", "h-6", "w-6", "group-hover:-text--red");
+  todoDeleteIcon.classList.add("ti", "ti-trash", "p-4", "group-hover:-text--red", "radius-end");
   todoDeleteButton.appendChild(todoDeleteIcon);
   todoBox.appendChild(todoCompleteButton);
   todoBox.appendChild(todoText);
@@ -176,10 +176,10 @@ function checkStorage() {
   }
 }
 
-function alert(type, msg, duration = 300) {
+function alert(type, msg, duration = 500) {
   /*  <div class="my-2 px-8 h-10 chat-bubble text-primary-color font-medium text-sm flex items-center font-medium">msg</div> */
   const alert = document.createElement("div");
-  alert.className = ` px-6 my-2 h-10 chat-bubble font-semibold text-sm flex items-center  ${type}`;
+  alert.className = ` px-8 my-2 h-10 chat-bubble font-semibold text-sm flex items-center ${type}`;
   alert.textContent = msg;
   todoAlertBox.appendChild(alert);
   setTimeout(() => {
