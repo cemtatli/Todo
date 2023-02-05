@@ -40,7 +40,7 @@ function filterTodos(event) {
 
 function deleteAllTodos() {
   if (todoList.children.length == 0) {
-    alert("warning", "There is no todo to delete !");
+    alert("warning", "There is no todo to delete !", 800);
   } else {
     if (confirm("Are you sure you want to delete all todos ?")) {
       while (todoList.firstChild) {
@@ -88,7 +88,7 @@ function addTodo(event) {
 }
 
 function AddUI(newTodo) {
-  /*             <li class="flex h-12.5 w-full items-center bg-white" id="todoBox">
+  /*<li class="flex h-12.5 w-full items-center bg-white" id="todoBox">
     <button
       id="todoCompleteButton"
       class="h-full w-25 bg-gradient-to-bl -from--blue -to--darkblue object-fill text-sm font-semibold text-white"
@@ -104,7 +104,7 @@ function AddUI(newTodo) {
   </li>  */
 
   const todoBox = document.createElement("li");
-  todoBox.classList.add("flex", "h-12.5", "w-full", "items-center", "bg-white", "radius-start");
+  todoBox.classList.add("flex", "h-12.5", "w-full", "items-center", "bg-white", "radius-start", "rounded-xl");
   todoBox.setAttribute("id", "todoBox");
 
   const todoCompleteButton = document.createElement("button");
@@ -125,13 +125,13 @@ function AddUI(newTodo) {
   const todoText = document.createElement("p");
   todoText.setAttribute("id", "todoText");
   todoText.classList.add(
-    "sm:ml-4",
-    "ml-2",
+    "sm:ml-6",
+    "ml-3",
     "flex-1",
     "overflow-hidden",
     "text-ellipsis",
     "whitespace-nowrap",
-    "md:text-sm",
+    "text-sm",
     "text-xs",
     "font-medium",
     "text-primary-color"

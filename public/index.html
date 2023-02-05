@@ -11,10 +11,10 @@
     <link href="https://api.fontshare.com/v2/css?f[]=satoshi@1,900,700,500,301,701,300,501,401,901,400,2&display=swap" rel="stylesheet" />
   </head>
   <body class="h-screen w-full bg-primary-color">
-    <div class="relative flex h-screen w-full flex-col items-center p-4 lg:p-8 2xl:mx-auto 2xl:w-1440">
+    <div class="relative flex w-full flex-col items-center lg:p-8 2xl:mx-auto 2xl:w-1440">
       <!-- Todo Header Section -->
       <div class="flex w-full items-center justify-between">
-        <h3 class="mb-5 flex w-full select-none items-center justify-start text-2xl font-bold -text--darkblue">
+        <h3 class="mb-4 flex w-full select-none items-center justify-start text-2xl font-bold -text--darkblue">
           Todo<a class="ml-1 text-end text-xs leading-none text-white/90">v1.0.0</a>
         </h3>
       </div>
@@ -33,7 +33,7 @@
       <div class="mt-10 flex w-full flex-col items-start">
         <h3 class="mb-2 flex w-full text-xl font-bold -text--darkblue">Todo's</h3>
         <!-- Todo Filter Section -->
-        <form class="relative mb-10 mr-auto flex w-full" id="todoFilterForm">
+        <form class="relative mb-8 mr-auto flex w-full" id="todoFilterForm">
           <input
             type="text"
             name="todoFilter"
@@ -44,7 +44,7 @@
           <i class="ti ti-search absolute h-5 w-5 translate-x-1/2 translate-y-1/2 text-white"></i>
         </form>
         <ul class="flex w-full flex-col items-center gap-4" id="todoList"></ul>
-        <button id="deleteAllButton" class="buton-design mx-auto mb-10 mt-5 h-10 rounded-lg px-8">Delete All</button>
+        <button id="deleteAllButton" class="buton-design mx-auto my-10 h-10 rounded-lg px-8">Delete All</button>
       </div>
     </div>
     \

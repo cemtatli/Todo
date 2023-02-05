@@ -450,7 +450,7 @@ html,
 }
 
 .radius-start {
-  border-radius: 16px 0px 0px 16px;
+  border-radius: 8px 0px 0px 8px;
 }
 
 .radius-end {
@@ -617,6 +617,11 @@ html,
   margin-right: auto;
 }
 
+.my-10 {
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+}
+
 .my-2 {
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
@@ -646,10 +651,6 @@ html,
   margin-bottom: 2.5rem;
 }
 
-.mt-5 {
-  margin-top: 1.25rem;
-}
-
 .mr-1 {
   margin-right: 0.25rem;
 }
@@ -658,8 +659,20 @@ html,
   margin-left: 1rem;
 }
 
-.ml-2 {
-  margin-left: 0.5rem;
+.ml-3 {
+  margin-left: 0.75rem;
+}
+
+.mb-1 {
+  margin-bottom: 0.25rem;
+}
+
+.mb-8 {
+  margin-bottom: 2rem;
+}
+
+.mb-4 {
+  margin-bottom: 1rem;
 }
 
 .flex {
@@ -717,10 +730,6 @@ html,
 
 .w-6 {
   width: 1.5rem;
-}
-
-.w-17\.5 {
-  width: 4.375rem;
 }
 
 .w-20 {
@@ -785,6 +794,10 @@ html,
 
 .rounded-lg {
   border-radius: 0.5rem;
+}
+
+.rounded-xl {
+  border-radius: 0.75rem;
 }
 
 .border-b-2 {
@@ -980,8 +993,8 @@ html,
 }
 
 @media (min-width: 640px) {
-  .sm\:ml-4 {
-    margin-left: 1rem;
+  .sm\:ml-6 {
+    margin-left: 1.5rem;
   }
 
   .sm\:w-25 {
@@ -989,13 +1002,6 @@ html,
   }
 
   .sm\:text-sm {
-    font-size: 0.875rem;
-    line-height: 1.25rem;
-  }
-}
-
-@media (min-width: 768px) {
-  .md\:text-sm {
     font-size: 0.875rem;
     line-height: 1.25rem;
   }
