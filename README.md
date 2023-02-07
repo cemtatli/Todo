@@ -1,4 +1,4 @@
-<h1 >Todo :blue_book: </h1>
+<h1>:blue_book: Todo</h1>
 <p>Welcome to the "Todo" repository. </p>
 
 <h3>Why todo list is important ?</h3>
